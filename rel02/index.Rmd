@@ -1,0 +1,142 @@
+---
+title: "Relatório 02 - Como usar o projeto Relatórios"
+author: "Ivo Guilherme Vieira"
+date: "29/04/2022"
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
+  - \posttitle{\end{center}}
+toc-title: "Sumário"
+output:
+  bookdown::html_document2: 
+    theme: journal
+    highlight: tango
+    toc: yes
+    number_sections: yes
+    includes:
+      in_header: logo.html
+  pdf_document:
+    
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+--- 
+
+# Objetivo
+
+O objetivo deste relatório é demonstrar os processos de criação de um projeto de relatório usando o RStudio e o github.
+
+# Apresentação do relatório
+
+Para começar o relatorio é necessario a intalação do Git e o cadastro no GitHub
+
+## Instalação do Git e cadastro no GitHub
+
+### O que é o Git?
+
+O Git é um sistema open-source de controle de versão. Com ele pode-se criar todo histórico de alterações no código do projeto e facilmente voltar para qualquer ponto para saber como o código estava em determinada data.
+
+Além disso, o Git ajuda a controlar o fluxo de novas funcionalidades entre vários desenvolvedores no mesmo projeto com ferramentas para análise e resolução de conflitos quando o mesmo arquivo é editado por mais de uma pessoa em funcionalidades diferentes.
+
+### Instalação do Git
+
+O download do Git é graduito e disponivel para: Windows, MacOS e Linux. Para acessar o link para download é só [Clicar aqui.](https://git-scm.com/downloads)
+
+### Criação de conta no GitHub
+
+Para criar uma conta no GitHub: [GitHub](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+
+## Criação do repositório e clonagem
+
+Para criação do repositório e clonagem deve seguir os seguintes passos:
+
+**Passo 1:** No RStudio, vá na barra de ferramentas e clique em Tools > Tools > Global Options… > Terminal > General > Shell > New Terminal open with: Git Bash > Apply.
+
+```{r fig1, echo=FALSE, fig.align='center', fig.cap="Terminal", out.width="60%"}
+knitr::include_graphics("Terminal.png")
+```
+
+** Passo 2:** Crie um repositório com o nome: github.io, caso ja exista com esse nome, use o nome: “discestcomp”.
+
+```{r  fig2, echo=FALSE, fig.align='center', fig.cap="Repositório", out.width="60%"}
+knitr::include_graphics("rep.png")
+```
+
+** Passo 3:** Depois de criar o repositório clique no botão para copiar o codigo HTTPs.
+
+```{r fig3, echo=FALSE, fig.align='center', fig.cap="Copiando o HTTPs", out.width="60%"}
+knitr::include_graphics("copia.png")
+```
+
+** Passo 4:** Abra o RStudio, na barra de ferramentas e clique em File > New Project… > Version Control > Git > Repository URL > insira o HTTPS do repositório Git.
+
+```{r fig4, echo=FALSE, fig.align='center', fig.cap="Git Repositorio", out.width="60%"}
+knitr::include_graphics("gitr.png")
+```
+
+
+## Uso de pacotes istalados
+
+Os pacotes serão utilizados para a produção dos relatórios, cada um tem suas características. Eles são:
+
+* rmarkdown: para a criação de textos em HTML
+
+* knitr: para a visualização e gerar os documentos em markdown
+
+* tinytex: habilita a compilação de documentos em LaTex e impressão em PDF
+
+
+## Rmarkdown
+
+Rmarkdown é uma ferramenta de programação, usado para edição de textos, podendo usar vários idiomas , incluindo R, Python e SQL, e tambem suporta dezenas de saidas de tipos de documentos como:  HTML, PDF, MS Word, Beamer, HTML5 slides e entre outras.
+
+### Escrita em Markdown
+
+Será demonstrada alguns comandos basicos para a escrita em Markdown:
+
+* Escrita em itálico: (`*itálico*`) *itálico*
+
+* Escrita em negrito: (`**negrito**`) **negrito**
+
+* Colocar um link: (`[Nome que vai ficar para clicar](link)`)
+
+* Colocar uma imagem: (`![Nome da imagem](Local da imagem)`)
+
+* Escrevendo títulos e subtítulos: (`##Título, ###Subtítulo`) Quanto mais # colocar mais subniveis vão ter.
+
+## GitHub
+
+Nesta seção será mostrado como comentar as altereções e como enviar para o GitHub.
+
+### Via aba Git
+
+Na aba Git, selecione os arquivos que deseja passar para o GitHub, clique em commit, abrirar uma janela onde deve se escrever sobre as mudanças no repositorio. Feito o “commit”, clique em Push para enviar os dados ao repositório.
+
+### Via terminal
+
+No RStudio, vai na aba de terminal e digite as seguintes linhas, uma a cada vez:
+
+```{r
+$ git add .
+$ git commit - m "escrever sobre as mudanças feitas" . 
+$ git push.
+
+```
+## Disponibilizando o repósitorio online
+
+Para fazer isso, o arquivo rmd deve ser compilado, salvo com o nome de index e traduzido para HTML clicando no botão Knit.
+
+Depois disso deve ser acessado a página do GitHub e clicar em Settings > Pages > em Source, escolha a opção main root > Save
+
+Assim, em poucos minutos a página estará pronta para uso.
+
+```{r fig5, echo=FALSE, fig.align='center', fig.cap="pages", out.width="70%"}
+knitr::include_graphics("pag.png")
+
+```
+

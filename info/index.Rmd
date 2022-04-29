@@ -1,0 +1,13 @@
+---
+title: "Ivo Guilherme Vieira"
+image: "logo.jpg"
+links:
+  - label: GitHub
+    url: "https://github.com/ivogv"
+  - label: Email
+    url: "ivogvieira@gmail.com"
+output:
+  postcards::jolla
+---
+ 
+Descrição sobre o aluno(a)!

@@ -1,0 +1,29 @@
+---
+title: "Relatórios da Disciplina de Estatística Computacional"
+author: "Ivo Vieira"
+date: '2022-04-28'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sumário
+
+.(1 Mais informações sobre mim)
+.[2 Página dos alunos da disciplina](### 2 Página dos alunos da disciplina)
+.[3 Relatórios](### 3 Relatórios)
+
+### 1 Mais informações sobre mim
+
+Nome: Ivo Guilherme Vieira 
+
+Matrícula:214150003
+
+### 2 Página dos alunos da disciplina
+
+Acesse: [Página](https://github.com/ivogv/relatorios)
+
+### 3 Relatórios
+[Relatorio 02 (26/04)](rel01/index.html){target="_blank"}

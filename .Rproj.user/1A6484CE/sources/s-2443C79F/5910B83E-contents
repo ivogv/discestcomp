@@ -114,3 +114,29 @@ Será demonstrada alguns comandos basicos para a escrita em Markdown:
 Nesta seção será mostrado como comentar as altereções e como enviar para o GitHub.
 
 ### Via aba Git
+
+Na aba Git, selecione os arquivos que deseja passar para o GitHub, clique em commit, abrirar uma janela onde deve se escrever sobre as mudanças no repositorio. Feito o “commit”, clique em Push para enviar os dados ao repositório.
+
+### Via terminal
+
+No RStudio, vai na aba de terminal e digite as seguintes linhas, uma a cada vez:
+
+```{r
+$ git add .
+$ git commit - m "escrever sobre as mudanças feitas" . 
+$ git push.
+
+```
+## Disponibilizando o repósitorio online
+
+Para fazer isso, o arquivo rmd deve ser compilado, salvo com o nome de index e traduzido para HTML clicando no botão Knit.
+
+Depois disso deve ser acessado a página do GitHub e clicar em Settings > Pages > em Source, escolha a opção main root > Save
+
+Assim, em poucos minutos a página estará pronta para uso.
+
+```{r fig5, echo=FALSE, fig.align='center', fig.cap="pages", out.width="70%"}
+knitr::include_graphics("pag.png")
+
+```
+

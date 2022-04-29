@@ -3,7 +3,7 @@
     "path": "C:/Users/ivogv/Desktop/Nova pasta (3)/discestcomp/rel02/index.Rmd",
     "project_path": null,
     "type": "r_markdown",
-    "hash": "1521045312",
+    "hash": "649256178",
     "contents": "",
     "dirty": false,
     "created": 1651243654399.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "116,0",
-        "scrollLine": "102"
+        "cursorPosition": "140,3",
+        "scrollLine": "128"
     },
     "folds": "",
-    "lastKnownWriteTime": 1651253719,
+    "lastKnownWriteTime": 1651272535,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1651253719208,
+    "last_content_update": 1651272535985,
     "read_only": false,
     "read_only_alternatives": []
 }
